@@ -46,7 +46,7 @@ double averageConsumption;
                     int month = Integer.parseInt(texts[0]);
                     double money = Double.parseDouble(texts[1]);
                     boolean t = Boolean.parseBoolean(texts[2].replaceAll("[^\\p{L}]+",""));
-                    System.out.println("line number: " + i + ": " + month + " " + money + " " + t);
+                    //System.out.println("line number: " + i + ": " + month + " " + money + " " + t);
                     if (t) {
                         consumption[month - 1] = money;
                     } else {
@@ -54,7 +54,7 @@ double averageConsumption;
                     }
                 }
                 System.out.println("File reading successful finished!");
-                calcProfit();
+                //calcProfit();
             return true;
             } else {
             System.out.println("Error: File is empty!");
